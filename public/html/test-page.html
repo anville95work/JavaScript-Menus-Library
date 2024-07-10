@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MENUS TESTING PAGE</title>
+	<style>
+		html {
+			background: black;
+		}
+
+		.testButtons {
+			display: table;
+			margin: 1rem auto;
+			color: gold;
+			background: #ffd70030;
+			border: solid 1px gold;
+			font-size: 0.7rem;
+			border-radius: 0.3rem;
+			padding: 0.3rem 0.5rem;
+			cursor: pointer;
+			user-select: none;
+		}
+		.testButtons:hover {
+			background: #ffd70090;
+		}
+		.testButtons:active {
+			background: #ffd700;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="toggleContextualMode" class="testButtons">CONTEXTUAL_MODE_OFF</div>
+
+	<div id="toggleOptionsMenu" class="testButtons">TOGGLE OPTIONS MENU</div>
+
+	<div id="toggleFirstContextMenu" class="testButtons">TOGGLE FIRST CONTEXT MENU</div>
+	<div id="toggleSecondContextMenu" class="testButtons">TOGGLE SECOND CONTEXT MENU</div>
+
+	<div id="toggleFirstPopupMenu" class="testButtons">TOGGLE FIRST POPUP MENU</div>
+	<div id="toggleSecondPopupMenu" class="testButtons">TOGGLE SECOND POPUP MENU</div>
+
+	<script type="text/javascript" src="../scripts/JavaScriptMenusLibrary.js"></script>
+	<script type="text/javascript">
+		//------------------------------------------------------------
+		//appBar only
+		//createAppBar();
+		//------------------------------------------------------------
+
+
+		//------------------------------------------------------------
+		//appBar with normal icon buttons only
+		/*let normalButtonsIconsSrcsArray = {
+			0: "../images/vlc.png",
+			1: "../images/eye-closed.png",
+			2: "../images/eye-open.png",
+			3: "../images/logo.png",
+			4: "../images/password.png",
+			5: "../images/send-message.png",
+			length: 6
+		}
+
+		createAppBar(normalButtonsIconsSrcsArray, undefined, (index) => {
+			console.log("an icon was clicked: " + index);
+		});*/
+		//------------------------------------------------------------
+
+
+		//------------------------------------------------------------
+		//appBar with normal icons and contextual icon buttons
+		/*let normalButtonsIconsSrcsArray = {
+			0: "../images/vlc.png",
+			1: "../images/eye-closed.png",
+			2: "../images/eye-open.png",
+			3: "../images/logo.png",
+			4: "../images/password.png",
+			5: "../images/send-message.png",
+			length: 6
+		}
+
+		let contextualButtonsIconsSrcsArray = {
+			0: "../images/anville-cyan.png",
+			1: "../images/calculator-logo.png",
+			2: "../images/blue-jet.png",
+			length: 3
+		}
+
+		createAppBar(normalButtonsIconsSrcsArray, contextualButtonsIconsSrcsArray, (index) => {
+			console.log("A normal icon button was clicked", "index: " + index);
+		}, (index) => {
+			console.log("A contextual icon button was clicked", "index: " + index);
+		});
+
+		//toggling contextual mode
+		var isContextualModeOn = false;
+		let toggleContextualMode = document.getElementById("toggleContextualMode");
+		toggleContextualMode.onclick = () => {
+			if(isContextualModeOn) {
+				turnOffContextualMode();
+				isContextualModeOn = false;
+			} else {
+				turnOnContextualMode();
+				isContextualModeOn = true;
+			}
+		}*/
+		//------------------------------------------------------------
+
+
+		//------------------------------------------------------------
+		//appBar with options menu at the same time. Also with normal icon buttons and contextual icon buttons
+		/*let normalButtonsIconsSrcsArray = {
+			0: "../images/vlc.png",
+			1: "../images/eye-closed.png",
+			2: "../images/eye-open.png",
+			3: "../images/logo.png",
+			4: "../images/password.png",
+			5: "../images/send-message.png",
+			length: 6
+		}
+
+		let contextualButtonsIconsSrcsArray = {
+			0: "../images/anville-cyan.png",
+			1: "../images/calculator-logo.png",
+			2: "../images/blue-jet.png",
+			length: 3
+		}
+
+		let createOptionsMenuBoolean = true;
+
+		let optionsStringsArray = {
+			0: "vcl",
+			1: "eye-closed",
+			2: "eye-open",
+			3: "logo",
+			4: "password",
+			5: "send-message",
+			length: 6
+		}
+
+		let optionsIconsSrcsArray = {
+			0: "../images/vlc.png",
+			1: "../images/eye-closed.png",
+			2: "../images/eye-open.png",
+			3: "../images/logo.png",
+			4: "../images/password.png",
+			5: "../images/send-message.png",
+			length: 6
+		}
+
+		createAppBar(normalButtonsIconsSrcsArray, contextualButtonsIconsSrcsArray, (index) => {
+			console.log("A normal icon button was clicked", "index: " + index);
+		}, (index) => {
+			console.log("A contextual icon button was clicked", "index: " + index);
+		}, createOptionsMenuBoolean, optionsStringsArray, optionsIconsSrcsArray, (index, name) => {
+			console.log("An option was selected in the optionsMenu");
+			console.log("optionIndex", index);
+			console.log("optionName", name);
+		})*/
+		//------------------------------------------------------------
+
+
+		//------------------------------------------------------------
+		//creating optionsMen. showing and hiding it.
+		/*let optionsStringsArray = {
+			0: "vcl",
+			1: "eye-closed",
+			2: "eye-open",
+			3: "logo",
+			4: "password",
+			5: "send-message",
+			length: 6
+		}
+
+		let optionsIconsSrcsArray = {
+			0: "../images/vlc.png",
+			1: "../images/eye-closed.png",
+			2: "../images/eye-open.png",
+			3: "../images/logo.png",
+			4: "../images/password.png",
+			5: "../images/send-message.png",
+			length: 6
+		}
+		createOptionsMenu(optionsStringsArray, optionsIconsSrcsArray, (index, name) => {
+			console.log("An option was selected in the optionsMenu");
+			console.log("optionIndex", index);
+			console.log("optionName", name);
+		})
+
+
+		let toggleOptionsMenu = document.getElementById("toggleOptionsMenu");
+		toggleOptionsMenu.onclick = () => {
+			//isOptionsMenuVisible is defined in the library
+			if(isOptionsMenuVisible) {
+				hideOptionsMenu();
+			} else {
+				showOptionsMenu();
+			}
+		}*/
+		//------------------------------------------------------------
+
+
+		//------------------------------------------------------------
+		//adding context menu.
+		
+		/*let contextMenuButtonsStringsArray = {
+			0: "vcl",
+			1: "eye-closed",
+			2: "eye-open",
+			length: 3
+		}
+
+		let contextMenuButtonsIconsSrcs = {
+			0: "../images/vlc.png",
+			1: "../images/eye-closed.png",
+			2: "../images/eye-open.png",
+			length: 3
+		}
+
+		let itemClickListener = (index, name, menuName) => {
+			console.log("context menu named [" + menuName + "] was clicked!");
+			console.log("itemIndex", index);
+			console.log("itemName", name);
+		}
+
+		addNewContextMenu("firstContextMenu", contextMenuButtonsStringsArray, contextMenuButtonsIconsSrcs, itemClickListener);
+
+
+		let secondContextMenuButtonsStringsArray = {
+			0: "logo",
+			1: "password",
+			2: "send-message",
+			length: 3
+		}
+
+		let secondContextMenuButtonsIconsSrcs = {
+			0: "../images/logo.png",
+			1: "../images/password.png",
+			2: "../images/send-message.png",
+			length: 3
+		}
+
+		addNewContextMenu("secondContextMenu", secondContextMenuButtonsStringsArray, secondContextMenuButtonsIconsSrcs, itemClickListener);
+
+		//showing the context Menus
+		let toggleFirstContextMenu = document.getElementById("toggleFirstContextMenu");
+		toggleFirstContextMenu.onclick = () => {
+			showContextMenu("firstContextMenu", toggleFirstContextMenu);
+		}
+
+		let toggleSecondContextMenu = document.getElementById("toggleSecondContextMenu");
+		toggleSecondContextMenu.onclick = () => {
+			showContextMenu("secondContextMenu", toggleSecondContextMenu)
+		}*/
+		//------------------------------------------------------------
+
+
+		//------------------------------------------------------------
+		//Adding popupMenu
+		/*let menuTitle = "FIRST POPUP MENU";
+		let menuName = "firstPopupMenu";
+
+		let popupMenuButtonsStringsArray = {
+			0: "vcl",
+			1: "eye-closed",
+			2: "eye-open",
+			length: 3
+		}
+
+		let popupMenuButtonsIconsSrcs = {
+			0: "../images/vlc.png",
+			1: "../images/eye-closed.png",
+			2: "../images/eye-open.png",
+			length: 3
+		}
+
+		let itemClickListener = (index, name, menuName, menuTitle) => {
+			console.log("A popupMenu named [" + menuName + "] was clicked!");
+			console.log("itemIndex", index);
+			console.log("itemName", name);
+			console.log("menuTitle", menuTitle);
+		}
+
+		addPopupMenu(menuTitle, menuName, popupMenuButtonsStringsArray, popupMenuButtonsIconsSrcs, itemClickListener);
+
+		let toggleFirstPopupMenu = document.getElementById("toggleFirstPopupMenu");
+		toggleFirstPopupMenu.onclick = () => {
+			showPopupMenu("firstPopupMenu");
+		}
+
+
+		let secondMenuTitle = "SECOND POPUP MENU";
+		let secondMenuName = "secondPopupMenu";
+
+		let secondPopupMenuButtonsStringsArray = {
+			0: "vcl",
+			1: "eye-closed",
+			2: "eye-open",
+			length: 3
+		}
+
+		let secondPopupMenuButtonsIconsSrcs = {
+			0: "../images/vlc.png",
+			1: "../images/eye-closed.png",
+			2: "../images/eye-open.png",
+			length: 3
+		}
+
+		addPopupMenu(secondMenuTitle, secondMenuName, secondPopupMenuButtonsStringsArray, secondPopupMenuButtonsIconsSrcs, itemClickListener);
+
+		let toggleSecondPopupMenu = document.getElementById("toggleSecondPopupMenu");
+		toggleSecondPopupMenu.onclick = () => {
+			showPopupMenu("secondPopupMenu");
+		}*/
+		//------------------------------------------------------------
+
+
+		//Adding custom style
+		/*
+		let menuStyle = "border-color: cyan; color: cyan; background-color: #044a"
+		let menuButtonStyleNormal = "background-color: #0ff2; border-color: cyan; color: cyan;";
+		let menuButtonStyleHover = "background-color: #0ff9";
+		let menuButtonStyleActive = "background-color: #0ff";
+		let menuTitleStyle = "color: cyan; border-color: cyan;";
+		customiseMenuStyle(menuStyle, menuButtonStyleNormal, menuButtonStyleHover, menuButtonStyleActive, menuTitleStyle)
+		*/
+	</script>
+
+</body>
+</html>

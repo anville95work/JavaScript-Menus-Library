@@ -1,0 +1,137 @@
+html {
+	background: black;
+}
+
+#anvilleAppBar {
+	display: table;
+	width: 100%;
+	min-height: 0.9rem;
+	background: #ffa50010;
+	border-radius: 0.3rem;
+	border: solid 1px orange;
+}
+
+#anvilleAppBar img {
+	cursor: pointer;
+	height: 0.8rem;
+	margin: 0.1rem 0.3rem;
+}
+
+.anvilleAppBarButtonsContainer {
+	display: inline-table;
+}
+
+.anvilleActionModeButtons {
+	display: none;
+}
+
+/*The options button*/
+.anvilleOptionsButton div {
+	display: table;
+	background: orange;
+	width: 0.8rem;
+	height: 2px;
+	margin: 0.12rem 0rem;
+}
+
+.anvilleOptionsButton {
+	cursor: pointer;
+	margin: 0.2rem;
+	float: right;
+}
+
+#anvilleBackgroundTint {
+	display: none;
+	background: #0009;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0vh;
+	left: 0vh;
+	z-index: 9;
+}
+
+.anvilleMenu {
+	display: table;
+	position: fixed;
+	padding: 1rem 0.7rem;
+	border: solid 1px orange;
+	background: #ffa50010;
+	border-radius: 0.4rem 0rem 0.4rem 0.4rem;
+	z-index: 12;
+}
+
+.anvilleOptionsMenu {
+	top: 0.2rem;
+	right: 0.3rem;
+}
+
+.anvilleMenu div {
+	display: table;
+	margin: 0.5rem 0rem;
+}
+
+.anvilleMenu div input, .anvilleOptionsMenu div img {
+	display: inline;
+	vertical-align: top;
+	margin: 0rem 0.2rem;
+}
+
+.anvilleMenu img {
+	height: 0.7rem;
+	cursor: pointer;
+	padding-top: 0.3rem;
+}
+
+.anvilleMenu input[type="button"] {
+	font-size: 0.7rem;
+	color: orange;
+}
+
+.anvilleMenu h5 {
+	color: orange;
+	font-size: 0.8rem;
+	font-weight: bolder;
+	display: table;
+	margin: 0rem auto;
+	margin-bottom: 1rem;
+	white-space: normal;
+	border: none;
+	border-bottom: solid 1px orange;
+	width: 6rem;
+	max-width: 6rem;
+	text-align: center;
+}
+
+.anvilleButtons {
+	font-size: 0.7rem;
+	color: orange;
+	border: solid 1px orange;
+	padding: 0.2rem 0.3rem;
+	background: #ffa50040;
+	cursor: pointer;
+	border-radius: 0.3rem;
+	width: 6rem;
+	max-width: 6rem;
+}
+
+.anvilleButtons:hover {
+	background: #ffa50090;
+}
+
+.anvilleButtons:active {
+	background: orange;
+}
+
+.anvilleButtons:focus {
+	outline: none;
+}
+
+
+.anvillePopupMenu {
+	border-radius: 0.4rem;
+}
+
+.anvilleContextMenu {
+	/*Nothing here yet actually*/
+}
